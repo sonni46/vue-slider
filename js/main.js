@@ -9,6 +9,9 @@ const root = new Vue ({
                 "./img/image3.jpg",
                 "./img/image4.jpg",]
     },
+    mounted(){
+        setInterval(this.switchR,3000);
+    },
     methods : {
         switchL: function() {
             this.contatorePhoto -=1
