@@ -12,7 +12,8 @@
 
 .row {
     display: flex;
-    align-items: center
+    align-items: center;
+    position: relative;
 }
 
 .left,
@@ -24,4 +25,28 @@
 
 .banner img {
     width:50vw;
+    height: 700px;
+}
+
+.select {
+    width: 20%;
+    height: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%);
+    background-color: rgba(0, 0, 0, 0.623);
+    border-radius: 50px;
+}
+
+.select i {
+    font-size: 20px;
+}
+
+.blu {
+    color: rgb(0, 119, 255);
 }

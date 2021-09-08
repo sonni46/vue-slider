@@ -18,9 +18,9 @@ const root = new Vue ({
         },
         switchR: function() {
             this.contatorePhoto +=1;
-            if(this.contatorePhoto > 0){
-                this.contatorePhoto = (this.photos.length - 1);
-
+            if(this.contatorePhoto == (this.photos.length)){
+                this.contatorePhoto = 0;
+            }
         }
     }
-})
+});

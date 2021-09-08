@@ -30,6 +30,9 @@
             <div class="right" @click="switchR">
                 <i class="fas fa-arrow-right"></i>
             </div>
+            <div class="select">
+                <i v-for="(i,index) in photos.length" :class="(contatorePhoto == index) ? 'blu' : null" class="fas fa-circle"></i>
+            </div>
         </div>
     </div>
     <script src="js/main.js"></script>
